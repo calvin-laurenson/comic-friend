@@ -1,0 +1,1 @@
+This project uses OpenAI Whisper ASR, the OpenAI ChatGPT API, and Silero TTS. This was created for a 10th grade project about superheroes.

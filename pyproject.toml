@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "comic-friend"
+version = "0.1.0"
+description = ""
+authors = ["Calvin Laurenson <89622328+calvin-laurenson@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "comic_friend"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai-whisper = "^20230314"
+speechrecognition = "^3.10.0"
+pydub = "^0.25.1"
+pyaudio = "^0.2.13"
+soundfile = "^0.12.1"
+openai = "^0.27.6"
+torchaudio = "^2.0.2+cpu"
+
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+comic-friend = "comic_friend.main:main"
