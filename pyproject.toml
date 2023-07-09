@@ -15,6 +15,8 @@ pyaudio = "^0.2.13"
 soundfile = "^0.12.1"
 openai = "^0.27.6"
 torchaudio = "^2.0.2+cpu"
+pyserial = "^3.5"
+omegaconf = "^2.3.0"
 
 
 [[tool.poetry.source]]
